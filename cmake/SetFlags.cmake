@@ -1,0 +1,12 @@
+function(fdmSetCompileFlags)
+	if(CMAKE_CXX_COMPILER_ID MATCHES MSVC)
+		set(F_DBG "/W4 /WX /FIfdm/util/MSVCWarnings.hpp")
+		set(F_REL "/W4 /WX /FIfdm/util/MSVCWarnings.hpp")
+	else()
+		set(F_DBG "")
+		set(F_REL "")
+	endif()
+	
+	set(CMAKE_CXX_FLAGS_RELEASE "${F_REL}" PARENT_SCOPE)
+	set(CMAKE_CXX_FLAGS_DEBUG "${F_DBG}" PARENT_SCOPE)
+endfunction()
