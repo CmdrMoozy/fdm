@@ -50,7 +50,7 @@ list(APPEND FDM_SOURCES ${util_SOURCES})
 
 qt5_add_resources(FDM_RESOURCES_RCC ${FDM_RESOURCES})
 
-add_executable(FDM
+add_executable(FDM WIN32
 	${FDM_SOURCES}
 	${FDM_RESOURCES_RCC}
 	)
