@@ -1,0 +1,35 @@
+FDM
+Version 1.0.0
+By Axel Rasmussen
+
+FDM is an application explicitly for Windows which attempts to replicate
+some of the functionality commonly provided by the "pciutils" and "usbutils"
+packages on UNIX-style operating systems.
+
+"FDM" stands for "Fuck Device Manager," because the built-in Windows device
+manager only generally shows information about devices /for which a driver
+is already installed/, and even then doesn't make it easy to access the
+specific model number of the hardware. Often, this functionality is exactly
+the opposite of what is desired - it is often most useful to be able to see
+devices that /have not been configured correctly/, in order to determine what
+drivers are needed for the device(s) to work.
+
+A laundry list of other things that are excessively annoying in either design
+or functionality:
+
+	WMI, DMTF, CIM and WQL
+	Managed Object Format
+	The entire Win32 API, and all of its meaningless typedef's.
+		(From the MSDN documentation for "INT":
+			"This type is declared in WinDef.h as follows:
+			typedef int INT;"
+		OH GOD WHY?!)
+	The Windows command prompt, and its total lack of such things as:
+		- The ability to resize it horizontally.
+		- The ability to [easily] copy/paste.
+		- The ability to have the up arrow work as expected.
+
+This application's ability to identify devices is based on the data provided
+by the following two projects:
+	http://pciids.sourceforge.net/
+	http://www.linux-usb.org/usb-ids.html

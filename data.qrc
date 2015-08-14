@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file>data/about.txt</file>
+		<file>data/license.txt</file>
+		<file>data/pci.ids</file>
+		<file>data/usb.ids</file>
+	</qresource>
+</RCC>
