@@ -22,8 +22,8 @@
 #include <QTextStream>
 #include <QList>
 
-#include "FDMUtil.h"
-#include "devices/PCIEntity.h"
+#include "fdm/FDMUtil.h"
+#include "fdm/devices/PCIEntity.h"
 
 PCIDeviceResolver::PCIDeviceResolver()
 {

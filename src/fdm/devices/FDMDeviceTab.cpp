@@ -25,7 +25,7 @@
 #include <QClipboard>
 #include <QApplication>
 
-#include "devices/EntityTableModel.h"
+#include "fdm/devices/EntityTableModel.h"
 
 FDMDeviceTab::FDMDeviceTab(EntityTableModel *m, QWidget *p, Qt::WindowFlags f)
 	: QWidget(p, f)

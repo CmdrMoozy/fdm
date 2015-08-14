@@ -19,7 +19,7 @@
 #ifndef INCLUDE_PCI_DEVICE_RESOLVER_H
 #define INCLUDE_PCI_DEVICE_RESOLVER_H
 
-#include "devices/DeviceResolver.h"
+#include "fdm/devices/DeviceResolver.h"
 
 #include <QHash>
 #include <QString>

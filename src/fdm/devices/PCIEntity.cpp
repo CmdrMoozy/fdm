@@ -20,7 +20,7 @@
 
 #include <QStringList>
 
-#include "FDMUtil.h"
+#include "fdm/FDMUtil.h"
 
 PCIEntity::PCIEntity(const QString &d)
 	: good(false)

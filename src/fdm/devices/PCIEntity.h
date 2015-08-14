@@ -19,7 +19,7 @@
 #ifndef INCLUDE_PCI_ENTITY_H
 #define INCLUDE_PCI_ENTITY_H
 
-#include "devices/DeviceEntity.h"
+#include "fdm/devices/DeviceEntity.h"
 
 class PCIEntity : public DeviceEntity
 {

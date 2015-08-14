@@ -22,8 +22,8 @@
 #include <QTextStream>
 #include <QList>
 
-#include "FDMUtil.h"
-#include "devices/USBEntity.h"
+#include "fdm/FDMUtil.h"
+#include "fdm/devices/USBEntity.h"
 
 USBDeviceResolver::USBDeviceResolver()
 {
@@ -94,7 +94,7 @@ QString USBDeviceResolver::getDeviceString(const DeviceEntity *e) const
 	return devicem.value(e->getVendor() + e->getDevice(), QString());
 }
 
-QString USBDeviceResolver::getSubIDString(const DeviceEntity *e) const
+QString USBDeviceResolver::getSubIDString(const DeviceEntity *) const
 {
 	return QString();
 }

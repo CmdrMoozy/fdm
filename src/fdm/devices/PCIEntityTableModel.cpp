@@ -22,7 +22,7 @@
 #include <comdef.h>
 #include <Windows.h>
 
-#include "devices/PCIEntity.h"
+#include "fdm/devices/PCIEntity.h"
 
 PCIEntityTableModel::PCIEntityTableModel(const DeviceResolver *r, QObject *p)
 	: EntityTableModel(r, p)

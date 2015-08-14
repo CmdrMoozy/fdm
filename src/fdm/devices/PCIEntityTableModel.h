@@ -19,7 +19,7 @@
 #ifndef INCLUDE_PCI_ENTITY_TABLE_MODEL_H
 #define INCLUDE_PCI_ENTITY_TABLE_MODEL_H
 
-#include "devices/EntityTableModel.h"
+#include "fdm/devices/EntityTableModel.h"
 
 #include <QList>
 

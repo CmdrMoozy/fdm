@@ -19,7 +19,7 @@
 #ifndef INCLUDE_USB_ENTITY_H
 #define INCLUDE_USB_ENTITY_H
 
-#include "devices/DeviceEntity.h"
+#include "fdm/devices/DeviceEntity.h"
 
 #include <cstdint>
 

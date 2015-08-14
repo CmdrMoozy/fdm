@@ -24,7 +24,7 @@
 #include <comdef.h>
 #include <Windows.h>
 
-#include "devices/USBEntity.h"
+#include "fdm/devices/USBEntity.h"
 
 USBEntityTableModel::USBEntityTableModel(const DeviceResolver *r, QObject *p)
 	: EntityTableModel(r, p)
@@ -162,8 +162,8 @@ void USBEntityTableModel::refresh()
 	
 	// Set devices.
 	
-	for(std::set<USBEntity *, derefCmp>::iterator it = dset.begin(); it != dset.end(); it++)
-		devices.push_back(*it);
+	for(auto devIt = dset.begin(); devIt != dset.end(); devIt++)
+		devices.push_back(*devIt);
 }
 
 int USBEntityTableModel::entityCount() const

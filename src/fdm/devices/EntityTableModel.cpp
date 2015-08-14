@@ -22,8 +22,8 @@
 
 #include <QModelIndexList>
 
-#include "devices/DeviceEntity.h"
-#include "devices/DeviceResolver.h"
+#include "fdm/devices/DeviceEntity.h"
+#include "fdm/devices/DeviceResolver.h"
 
 EntityTableModel::EntityTableModel(const DeviceResolver *r, QObject *p)
 	: QAbstractTableModel(p), resolver(r)
@@ -81,12 +81,12 @@ QString EntityTableModel::getAllText() const
 	return text;
 }
 
-int EntityTableModel::rowCount(const QModelIndex &p) const
+int EntityTableModel::rowCount(const QModelIndex &) const
 {
 	return entityCount();
 }
 
-int EntityTableModel::columnCount(const QModelIndex &p) const
+int EntityTableModel::columnCount(const QModelIndex &) const
 {
 	return 6;
 }
